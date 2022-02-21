@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_black_light"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/movieImg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/movie_thumb_height"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/movieImg"
+        app:layout_constraintStart_toStartOf="@+id/movieImg"
+        app:layout_constraintTop_toBottomOf="@+id/movieImg" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_release_date"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        android:textColor="@color/orange_dark"
+        app:layout_constraintEnd_toEndOf="@+id/movieImg"
+        app:layout_constraintStart_toStartOf="@+id/movieImg"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_imdb"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        android:textColor="@color/orange_dark"
+        app:layout_constraintEnd_toEndOf="@+id/movieImg"
+        app:layout_constraintStart_toStartOf="@+id/movieImg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_release_date" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvType"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        android:textColor="@color/orange_dark"
+        app:layout_constraintEnd_toEndOf="@+id/movieImg"
+        app:layout_constraintStart_toStartOf="@+id/movieImg"
+        android:paddingBottom="@dimen/fab_margin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imdb" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
